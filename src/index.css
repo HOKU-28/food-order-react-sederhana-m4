@@ -1,0 +1,200 @@
+/* Reset dasar dan gaya umum */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666666;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+/* Container untuk Menu dan Keranjang */
+.menu-container,
+.cart-container {
+  flex: 1;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.menu-container h2,
+.cart-container h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+/* Daftar Menu */
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.menu-item h3 {
+  margin: 0 0 4px 0;
+  font-size: 15px;
+}
+
+.menu-item p {
+  margin: 0;
+  color: #666666;
+  font-size: 13px;
+}
+
+.menu-item button {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.menu-item button:hover {
+  background-color: #218838;
+}
+
+/* Keranjang Belanja */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.cart-item h4 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+}
+
+.cart-item p {
+  margin: 0;
+  color: #666666;
+  font-size: 12px;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cart-actions button {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.cart-actions span {
+  font-weight: bold;
+  min-width: 16px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.cart-actions .btn-remove {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.cart-actions .btn-remove:hover {
+  background-color: #c82333;
+}
+
+/* Total dan Tombol Pesan */
+.cart-total {
+  margin-top: 16px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 12px;
+  text-align: right;
+}
+
+.cart-total h3 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+}
+
+.btn-order {
+  width: 100%;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-order:hover {
+  background-color: #0069d9;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+}
